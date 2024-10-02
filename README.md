@@ -1,39 +1,51 @@
-# TorchCUDA Check
+# ML Framework and CUDA Checker (Version 2.0)
 
-TorchCUDA Check is a Python-based GUI application that allows users to check if PyTorch and CUDA are installed on their system. The application also provides detailed system specifications and compatibility checks. It includes options to install PyTorch, view instructions, export logs, and check for updates. The application uses CUDA for upscaling if available, otherwise it falls back to CPU.
+ML Framework and CUDA Checker (formerly known as TorchCUDA Check) is an advanced Python-based GUI application that allows users to check the installation of PyTorch, TensorFlow, and CUDA on their system. It provides detailed system specifications, compatibility checks, and additional advanced features for managing NVIDIA GPUs. This version introduces support for TensorFlow, advanced GPU management features, multiple themes, and improved system diagnostics.
+
+## What's New in Version 2.0
+
+- **TensorFlow Support:** Now supports TensorFlow installation checks.
+- **Advanced Features:** Includes advanced GPU management options like enabling NVIDIA persistence mode and starting GPU logging.
+- **Theming:** Allows users to toggle between light, dark, blue, and green themes.
+- **More Detailed System Specs:** Improved system specification display with CPU, RAM, hostname, IP address, and GPU details.
+- **Regular System Updates:** Periodically updates system information every 5 seconds.
+- **Compatibility Checks:** Enhanced system compatibility checks for machine learning tasks.
+- **CLI Mode:** Allows running checks through a command-line interface.
 
 ## Features
 
-- Check if PyTorch is installed and view the version.
-- Check if CUDA is available and view the version.
-- View detailed system specifications including CPU, RAM, GPU, hostname, and IP address.
-- Check system compatibility for running PyTorch and CUDA.
-- Install PyTorch if not already installed.
-- Export system logs to a text file.
-- Toggle between light and dark themes.
-- View instructions on how to use the application.
-- Check for PyTorch and CUDA updates.
+- **Check PyTorch Installation:** Verifies if PyTorch is installed and displays its version.
+- **Check TensorFlow Installation:** Checks if TensorFlow is installed and shows its version.
+- **Check CUDA Availability:** Checks if CUDA is available on the system and displays its version.
+- **View System Specifications:** Provides detailed information including CPU, RAM, GPU details, hostname, and IP address.
+- **Advanced GPU Management:** Enables advanced GPU features such as NVIDIA persistence mode and GPU logging (requires NVIDIA GPUs and drivers).
+- **System Compatibility Check:** Verifies if the system meets minimum requirements for machine learning tasks.
+- **Export Logs:** Exports system logs for diagnostics and troubleshooting.
+- **Theme Selector:** Switch between light, dark, blue, and green themes for user comfort.
+- **Instruction Manual:** Built-in instructions and information on how to use the application.
+- **Check for Updates:** Quick links to official sites for checking PyTorch, TensorFlow, and CUDA updates.
 
 ## Requirements
 
 - Python 3.x
-- sv_ttk
 - psutil
 - torch
 - Pillow
+- PySide6
+- unittest
 
 ## Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Xza85hrf/torchcuda-check.git
+    git clone https://github.com/Xza85hrf/ML-Framework_Checker.git
     ```
 
 2. Change to the project directory:
 
     ```bash
-    cd torchcuda-check
+    cd ML-Framework_Checker
     ```
 
 3. Install the required dependencies:
@@ -44,17 +56,29 @@ TorchCUDA Check is a Python-based GUI application that allows users to check if 
 
 ## Usage
 
+### GUI Mode
+
 1. Run the application:
 
     ```bash
-    python torchcuda_check.py
+    python mlframework_checker.py
     ```
 
-2. Use the GUI to check PyTorch and CUDA installation, view system specs, and perform other functions.
+2. Use the GUI to check PyTorch, TensorFlow, and CUDA installation, view system specs, and use other advanced features.
+
+### CLI Mode
+
+1. Run the application in CLI mode:
+
+    ```bash
+    python mlframework_checker.py --cli
+    ```
+
+2. The application will run checks for PyTorch, TensorFlow, CUDA, and system specs in the command-line interface.
 
 ## Logging
 
-The application creates a log file `system_check.log` in the project directory to track events and errors.
+The application generates a log file named `system_check_<timestamp>.log` in the project directory to track events and errors. This log can be exported using the "Export Logs" feature in the GUI.
 
 ## Contributing
 
@@ -64,3 +88,6 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Older Version
+
+The previous version of this application was known as **TorchCUDA Check**, which primarily focused on checking PyTorch and CUDA installations. While the new version (2.0) expands its functionality to include TensorFlow support and advanced GPU management, the core features of checking PyTorch and CUDA remain intact.
