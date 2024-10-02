@@ -80,6 +80,54 @@ ML Framework and CUDA Checker (formerly known as TorchCUDA Check) is an advanced
 
 The application generates a log file named `system_check_<timestamp>.log` in the project directory to track events and errors. This log can be exported using the "Export Logs" feature in the GUI.
 
+## Roadmap of Development for the Application
+
+---
+
+**Current Version:**
+- **Features:**
+  - Check PyTorch installation.
+  - Check TensorFlow installation.
+  - Check CUDA availability.
+  - View system specifications.
+  - Export logs.
+  - Check system compatibility.
+  - Check for updates for PyTorch, TensorFlow, and CUDA.
+  - Enable NVIDIA persistence mode.
+  - Open TensorFlow installation webpage.
+
+**Future Development Roadmap:**
+
+1. **Visualization Enhancements:**
+   - **Add graphs or charts** to visualize GPU usage over time.
+   - **Implement a feature** to compare multiple GPU performances.
+
+2. **Performance Testing:**
+   - **Add a system benchmark feature** to test ML framework performance.
+
+3. **Environment Management:**
+   - **Include a feature** to manage and switch between different Python environments.
+
+4. **Configuration Management:**
+   - **Implement a way** to save and load different configuration profiles.
+
+5. **User Interface Improvements:**
+   - **Enhance the UI** to make it more intuitive and user-friendly.
+   - **Add support for dark mode** to improve user experience in low-light environments.
+
+6. **Security Enhancements:**
+   - **Implement secure logging and data handling** practices.
+   - **Add user authentication** to restrict access to certain features.
+
+7. **Cross-Platform Support:**
+   - **Ensure compatibility** with major operating systems (Windows, macOS, Linux).
+
+8. **Community and Documentation:**
+   - **Create comprehensive documentation** and user guides.
+   - **Set up a community forum** for user feedback and support.
+
+---
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
